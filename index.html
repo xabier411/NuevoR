@@ -6,17 +6,37 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <title>Aplicacion1</title>
+    <link rel="stylesheet" href="Estilos.css">
 </head>
 
 <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <h1>Conbtador de pulsos</h1>
+    <button class="Boton" id="B1">SUMAR 1</button>
+    <button class="Boton" id="B2">RESTAR 1</button>
+    <p id="numero">0</p>
 
-    <!-- You can also require other files to run in this process -->
+    <h1>Temporizador</h1>
+    <button class="Boton" id="B3">PLAY</button>
+    <button class="Boton" id="B4">RESET</button>
+    <p id="tiempo">0</p>
+    <h1>PIZARRA</h1>
+    <canvas id="pizarra"></canvas>
+    <button class="Boton" id="B5">GUARDAR</button>
+
+    <?php 
+        include("PostCanva.php");
+    ?>
+
+
     <script src="renderer.js"></script>
+    <script src="Dibj.js"></script>
+
+    <footer>
+        We are using Node.js <span id="node-version"></span>,
+        Chromium <span id="chrome-version"></span>,
+        and Electron <span id="electron-version"></span>.
+    </footer>
 </body>
 
 </html>
