@@ -9,8 +9,8 @@ document.getElementById("B2").addEventListener("mouseover", ColorB2);
 document.getElementById("B2").addEventListener("mouseout", Color2B2);
 
 document.getElementById("B3").addEventListener("click", EmpezarTiempo);
-document.getElementById("B3").addEventListener("focus", ColorB3);
-document.getElementById("B3").addEventListener("blur", ColorB3);
+/*document.getElementById("B3").addEventListener("focus", ColorB3);
+document.getElementById("B3").addEventListener("blur", ColorB3);*/
 
 function Sumar() {
     $VariableSuma++;

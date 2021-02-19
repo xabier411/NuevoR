@@ -7,6 +7,7 @@ let pintarLinea = false;
 let nuevaPosicionX = 0;
 let nuevaPosicionY = 0;
 
+
 let posicion = miCanvas.getBoundingClientRect()
 correccionX = posicion.x;
 correccionY = posicion.y;
